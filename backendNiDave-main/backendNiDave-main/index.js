@@ -19,7 +19,7 @@ app.use(cors({
 app.use('/api/playlist', playlistRoutes)
 app.use('/api/auth', authRoutes)
 // connect to db
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://dpascual524712:yHsTUvkssxLIoItJ@cluster0.sal8k.mongodb.net/")
   .then(() => {
     console.log('connected to database')
     // listen to port
